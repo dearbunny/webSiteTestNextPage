@@ -69,7 +69,7 @@
                         <outlet property="mBackBtn" destination="xr9-kC-cC8" id="cc4-OT-8Eo"/>
                         <outlet property="mForwardBtn" destination="q46-Mp-5QL" id="3cr-LD-fFd"/>
                         <outlet property="myActivityIndicator" destination="HFh-9d-GDW" id="EdE-zh-09Q"/>
-                        <outlet property="webView" destination="ywg-84-h0P" id="gbD-Bx-i4m"/>
+                        <outlet property="webView" destination="ywg-84-h0P" id="YS0-en-X3d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

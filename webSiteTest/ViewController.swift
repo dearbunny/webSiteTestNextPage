@@ -15,7 +15,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
     
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var myActivityIndicator: UIActivityIndicatorView!
-    var mWebView: WKWebView? = nil
+    //var mWebView: WKWebView? = nil
 
     
     override func viewDidLoad() {
@@ -40,7 +40,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         myActivityIndicator.stopAnimating()
         print("finish to load")
-        if let webView = mWebView {
+        if let webView = webView {
             mForwardBtn.isEnabled = webView.canGoForward
             mBackBtn.isEnabled = webView.canGoBack
         }
@@ -63,13 +63,13 @@ class ViewController: UIViewController, WKNavigationDelegate {
     
     // 實現回到上一頁和前往下一頁的功能
     @IBAction func backAction(_ sender: UIButton) {
-        if mWebView?.goBack() == nil {
+        if webView?.goBack() == nil {
                     print("No more page to back")
                 }
     }
 
     @IBAction func forwardAction(_ sender: UIButton) {
-        if mWebView?.goForward() == nil {
+        if webView?.goForward() == nil {
             print("No more page to forward")
         }
     }
