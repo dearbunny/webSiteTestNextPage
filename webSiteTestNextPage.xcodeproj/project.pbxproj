@@ -13,10 +13,11 @@
 		9AF42A192602E34400F193DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF42A172602E34400F193DF /* Main.storyboard */; };
 		9AF42A1B2602E34500F193DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AF42A1A2602E34500F193DF /* Assets.xcassets */; };
 		9AF42A1E2602E34500F193DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF42A1C2602E34500F193DF /* LaunchScreen.storyboard */; };
+		9AF42A282602E4C400F193DF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF42A272602E4C400F193DF /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9AF42A0E2602E34400F193DF /* webSiteTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = webSiteTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AF42A0E2602E34400F193DF /* webSiteTestNextPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = webSiteTestNextPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AF42A112602E34400F193DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AF42A132602E34400F193DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9AF42A152602E34400F193DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +25,7 @@
 		9AF42A1A2602E34500F193DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AF42A1D2602E34500F193DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AF42A1F2602E34500F193DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AF42A272602E4C400F193DF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AF42A282602E4C400F193DF /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,13 +45,14 @@
 			children = (
 				9AF42A102602E34400F193DF /* webSiteTest */,
 				9AF42A0F2602E34400F193DF /* Products */,
+				9AF42A262602E4C400F193DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		9AF42A0F2602E34400F193DF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9AF42A0E2602E34400F193DF /* webSiteTest.app */,
+				9AF42A0E2602E34400F193DF /* webSiteTestNextPage.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,12 +71,20 @@
 			path = webSiteTest;
 			sourceTree = "<group>";
 		};
+		9AF42A262602E4C400F193DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AF42A272602E4C400F193DF /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9AF42A0D2602E34400F193DF /* webSiteTest */ = {
+		9AF42A0D2602E34400F193DF /* webSiteTestNextPage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9AF42A222602E34500F193DF /* Build configuration list for PBXNativeTarget "webSiteTest" */;
+			buildConfigurationList = 9AF42A222602E34500F193DF /* Build configuration list for PBXNativeTarget "webSiteTestNextPage" */;
 			buildPhases = (
 				9AF42A0A2602E34400F193DF /* Sources */,
 				9AF42A0B2602E34400F193DF /* Frameworks */,
@@ -82,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = webSiteTest;
+			name = webSiteTestNextPage;
 			productName = webSiteTest;
-			productReference = 9AF42A0E2602E34400F193DF /* webSiteTest.app */;
+			productReference = 9AF42A0E2602E34400F193DF /* webSiteTestNextPage.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9AF42A092602E34400F193DF /* Build configuration list for PBXProject "webSiteTest" */;
+			buildConfigurationList = 9AF42A092602E34400F193DF /* Build configuration list for PBXProject "webSiteTestNextPage" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9AF42A0D2602E34400F193DF /* webSiteTest */,
+				9AF42A0D2602E34400F193DF /* webSiteTestNextPage */,
 			);
 		};
 /* End PBXProject section */
@@ -322,7 +334,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9AF42A092602E34400F193DF /* Build configuration list for PBXProject "webSiteTest" */ = {
+		9AF42A092602E34400F193DF /* Build configuration list for PBXProject "webSiteTestNextPage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9AF42A202602E34500F193DF /* Debug */,
@@ -331,7 +343,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9AF42A222602E34500F193DF /* Build configuration list for PBXNativeTarget "webSiteTest" */ = {
+		9AF42A222602E34500F193DF /* Build configuration list for PBXNativeTarget "webSiteTestNextPage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9AF42A232602E34500F193DF /* Debug */,
